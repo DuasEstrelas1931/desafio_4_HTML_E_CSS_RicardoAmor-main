@@ -8,8 +8,7 @@ body {
   min-height: 100vh;
 }
 
-header {
-  background-color: #003366;
+header { 
   color: white;
   padding: 15px 30px;
   display: flex;
@@ -32,14 +31,16 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #003366;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 15px;
+  transition: transform 0.3 ease;
 }
 
 nav a:hover {
   text-decoration: underline;
+  transform:scale(1.1);
 }
 
 main {
@@ -150,33 +151,66 @@ footer p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin: 40px 0;
+  
+}
+
+.veiculos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .veiculo {
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 4px 8px #0055aa
-  /*box-shadow: 0 0 10px rgba(0,0,0,0.1);*/
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
 }
 
-.veiculo img {
-  max-width: 100%;
+.veiculo:hover {
+  transform: translateY(-5px);
+}
+
+.veiculo img:first-of-type {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
+  display: block;
+}
+
+.veiculo table {
+  width: 100%;
+  padding: 16px;
 }
 
 .veiculo h3 {
-  margin-top: 15px;
-  font-size: 18px;
+  font-size: 1.2em;
+  margin: 0 0 8px 0;
 }
 
 .veiculo p {
-  margin: 10px 0;
-  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.veiculo label {
+  font-size: 0.95em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.veiculo img[alt="Imagem Info"] {
+  width: 18px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .veiculo {
+    width: 90%;
+  }
 }
 
 /* COMPARAR */

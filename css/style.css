@@ -87,13 +87,14 @@ figure img {
   border: 2px solid var(--cor-primaria);
   border-radius: 8px;
   box-shadow: 0 4px 8px var(--cor-secundaria);
-  display: block;
+  display: flex;
   margin: auto;
 }
 
 figcaption {
   position: absolute;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 /* FOOTER */

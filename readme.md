@@ -9,15 +9,19 @@ Este projeto é uma simulação de um site da Ford, desenvolvido como parte de u
 ├── lancamento.html
 ├── contato.html
 ├── css/
+│ └── reset.css
 │ └── style.css
 ├── img/
-│ ├── ford-logo.png
-│ ├── veiculo1.jpg
-│ ├── veiculo2.jpg
-│ ├── veiculo3.jpg
-│ ├── facebook.png
-│ ├── instagram.png
-│ └── youtube.png
+│ ├── facebook-50.png
+│ ├── ford-96.jpg
+│ ├── imagem_1.jpg
+│ ├── info.jpg
+│ ├── instagram-logo-50.png
+│ ├── logo-ford-256.png
+│ └── storm.png
+│ └── XL-Cabine.png
+│ └── xls-2.2-diesel.png
+│ └── youtube-squared-50.png
 └── README.md
 
 
